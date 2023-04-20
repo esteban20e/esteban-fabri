@@ -1,8 +1,8 @@
 Algoritmo cajero
-	saldo = 200000
+	Saldo = 200000
 	contador = 1
 	Mientras contador <= 3 Hacer
-		Escribir "escribir contraseña"
+		Escribir "escribir contraseñaa"
 		Leer contraseña
 		
 		si contraseña == "esteban123" Entonces
@@ -17,22 +17,22 @@ Algoritmo cajero
 				
 				Segun  respuesta
 					1:
-						Escribir "tu saldo actual es de: ",saldo
+						Escribir "tu saldo actual es de: ",Saldo
 					2:	
 						Escribir "cantidad a retirar"
 						Leer retiro
-						si retiro> saldo Entonces
+						si retiro> Saldo Entonces
 							Escribir "saldo insuficiente"
-							Escribir "tu saldo actual es de: ",saldo
+							Escribir "tu saldo actual es de: ",Saldo
 						SiNo
-							saldo=saldo - retiro
-							Escribir "tu saldo actual es de: ", saldo
+							Saldo=Saldo - retiro
+							Escribir "tu saldo actual es de: ", Saldo
 						FinSi
 					3:
 						Escribir "cantidad a depositar"
 						Leer deposito
-						saldo= saldo + deposito
-						Escribir "tu saldo actual es de: ",saldo
+						Saldo= Saldo + deposito
+						Escribir "tu saldo actual es de: ",Saldo
 						
 				FinSegun
 				
